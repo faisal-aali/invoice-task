@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\InvoiceDashboard;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', InvoiceDashboard::class)->name('dashboard');

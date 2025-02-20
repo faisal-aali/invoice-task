@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invoice Dashboard</title>
     @livewireStyles
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body>
-<div class="min-h-screen bg-gray-100">
-    @yield('content')
+<body class="bg-gray-100">
+<div class="min-h-screen">
+    {{ $slot }}
 </div>
-
 @livewireScripts
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </body>
