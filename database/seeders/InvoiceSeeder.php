@@ -12,7 +12,7 @@ class InvoiceSeeder extends Seeder
     {
         $faker = Faker::create();
 
-        foreach (range(1, 10) as $i) {
+        foreach (range(1, 20) as $i) {
             Invoice::create([
                 'amount' => $faker->randomFloat(2, 100, 1000),
                 'invoice_number' => 'INV-' . strtoupper($faker->bothify('??###')),
