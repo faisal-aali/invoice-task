@@ -75,13 +75,13 @@
                 Export
             </button>
 
-            <button class="px-4 py-1 text-dark bg-main rounded-md flex items-center gap-2 shadow-md">
+            <button class="px-4 py-1 text-white bg-main rounded-md flex items-center gap-2 shadow-md bg">
                 <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
                 </svg>
                 Create Invoice
                 <div class="rounded-sm px-2 bg-light">
-                    <p class="text-xs">123</p>
+                    <p class="text-xs">N</p>
                 </div>
             </button>
         </div>
@@ -156,9 +156,15 @@
                                     Options
                                 </button>
                                 <div x-show="open" @click.away="open = false"
-                                     class="absolute right-0 mt-2 w-40 bg-white border border-gray-200 rounded-md shadow-lg z-10">
-                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Download</a>
-                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delete</a>
+                                     class="absolute right-0 mt-2 w-40 bg-white border border-gray-200 rounded-md shadow-lg z-10 align-middle">
+                                    <p class="block px-4 py-2 text-sm text-gray-500">ACTIONS</p>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Download PDF</a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Duplicate Invoice</a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delete Draft</a>
+                                    <div class="py-1 flex flex-col gap-2" role="none">
+                                        <p class="block px-4 py-2 text-sm text-gray-500">CONNECTIONS</p>
+                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View Customer</a>
+                                    </div>
                                 </div>
                             </div>
                         </td>
